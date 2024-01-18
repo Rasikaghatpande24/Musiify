@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+    /* overflow: scroll; */
+    
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* navigation bar */
+nav{
+    font-family: "ubuntu","san-sarif";
+}
+nav ul{
+    display: flex;
+    background-color: black;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    list-style: none;
+}
+nav li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#logo img{
+    height: 25px;
+}
+#logo span{
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+/* Container */
+.container{
+    min-height: 600px;
+    min-width: 1200px; 
+    background-color: black;
+    color: white;
+    padding: 20px;
+    background-image: url('/Pictures/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.songPlaylist{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+/* Songs of playlist */
+.playlistSongs{
+    height: 50px;
+    width: 470px;
+    background-color: rgb(25, 27, 27);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px 15px;
+    font-weight: bold;
+    font-size: medium;
+    font-family: "ubuntu";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.playlistSongs span{
+    padding: 0px 15px;
+}
+/* .columns{
+    display:none;
+} */
+/* .columns > .playlistItemPlay{
+    display: flex;
+} */
+.playlistSongs:hover{
+    opacity: 0.5;
+}
+.playlistSongs span{
+    padding: 0px 15px ;
+}
+.playlistItemPlay{
+    display: flex;
+}
+/* Cover of playlist */
+.playlistCover{
+    /* display: flex;
+    flex-direction: column; */
+    margin: 30px;
+    cursor: pointer;
+}
+/* .row1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.row2{
+    display: flex;
+    flex-direction: column-reverse;
+}  */
+.playlistCover img:hover{
+    opacity: 0.3;
+}
+
+/* SongItems */
+.songItems span{
+    padding: 0px 15px ;
+}
+.songItems img{
+    margin: 0px 20px ;
+}
+.timestamp{
+    margin: 0px 20px;
+}
+.timestamp i {
+    cursor: pointer;
+}
+.songItems{
+    height: 50px;
+    width: 500px;
+    background-color: rgb(25, 27, 27);
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: medium;
+    font-family: "ubuntu";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.songItems:hover{
+    opacity: 0.5;
+}
+/* #backgrounglogo{
+    justify-content: right;
+    padding-top: 300px;
+    padding-right: 87px;
+} */
+
+/* Footer or the bottom of the page  */
+.bottom{
+    text-align: center;
+    position: sticky;
+    height: 70px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#myProgressBar{
+    width: 80%;
+    margin: 15px;
+}
+.icons i{
+    padding: 3px;
+    margin-bottom: 10px;
+}
+#gif{
+    opacity: 0;
+    transition: opacity 0.8 ease-in;
+}
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    padding-top: 10px;
+    font-family: "ubuntu";
+}
